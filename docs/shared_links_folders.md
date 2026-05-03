@@ -70,8 +70,8 @@ client.shared_links_folders.get_shared_link_for_folder(folder.id, "shared_link")
 
 ### Arguments
 
-- folder_id `str`
-  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder_id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
+- folder.id `str`
+  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder.id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
 - fields `str`
   - Explicitly request the `shared_link` fields to be returned for this item.
 - extra_headers `Optional[Dict[str, Optional[str]]]`
@@ -107,8 +107,8 @@ client.shared_links_folders.add_share_link_to_folder(
 
 ### Arguments
 
-- folder_id `str`
-  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder_id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
+- folder.id `str`
+  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder.id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
 - shared_link `Optional[AddShareLinkToFolderSharedLink]`
   - The settings for the shared link to create on the folder. Use an empty object (`{}`) to use the default settings for shared links.
 - fields `str`
@@ -146,8 +146,8 @@ client.shared_links_folders.update_shared_link_on_folder(
 
 ### Arguments
 
-- folder_id `str`
-  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder_id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
+- folder.id `str`
+  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder.id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
 - shared_link `Optional[UpdateSharedLinkOnFolderSharedLink]`
   - The settings for the shared link to update.
 - fields `str`
@@ -181,8 +181,8 @@ client.shared_links_folders.remove_shared_link_from_folder(
 
 ### Arguments
 
-- folder_id `str`
-  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder_id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
+- folder.id `str`
+  - The unique identifier that represent a folder. The ID for any folder can be determined by visiting this folder in the web application and copying the ID from the URL. For example, for the URL `https://*.app.box.com/folder/123` the `folder.id` is `123`. The root folder of a Box account is always represented by the ID `0`. Example: "12345"
 - shared_link `Optional[RemoveSharedLinkFromFolderSharedLink]`
   - By setting this value to `null`, the shared link is removed from the folder.
 - fields `str`
